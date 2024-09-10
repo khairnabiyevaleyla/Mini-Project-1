@@ -53,7 +53,7 @@ table {
   border-spacing: 0;
 }
 
-#banner .banner_product_img img {
+.banner_product_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -79,7 +79,7 @@ table {
   transform: scale(1);
 }
 
-#banner .banner_text a {
+#banner a {
   display: inline-block;
   width: 180px;
   height: 60px;
@@ -97,7 +97,7 @@ table {
   background-image: linear-gradient(16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%);
 }
 
-#banner .banner_text a:hover {
+#banner:hover {
   background-position: right center;
 }
 
@@ -106,6 +106,11 @@ table {
   text-transform: capitalize;
   background-color: #ecfdff;
   padding: 20px;
+}
+@media (max-width: 948px) {
+  #header {
+    display: none;
+  }
 }
 #header .logo_img {
   padding: 10px;
@@ -200,10 +205,31 @@ table {
   margin-bottom: 35px;
   line-height: 72px;
 }
+@media (max-width: 748px) {
+  #banner .banner_text h1 {
+    font-size: 44px;
+    line-height: 54px;
+    margin-bottom: 20px;
+  }
+}
 #banner .banner_text p {
   font-size: 15px;
   line-height: 1.8rem;
   margin-bottom: 70px;
   padding-right: 80px;
   font-weight: 300;
+}
+@media (max-width: 748px) {
+  #banner .banner_text p {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 748px) {
+  #banner a {
+    margin-bottom: 50px;
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

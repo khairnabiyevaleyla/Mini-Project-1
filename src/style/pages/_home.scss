@@ -9,6 +9,11 @@
     font-weight: 700;
     margin-bottom: 35px;
     line-height: 72px;
+    @media (max-width: 748px) {
+        font-size: 44px;
+        line-height: 54px;
+        margin-bottom: 20px;
+        }
     }
     p {
     font-size: 15px;
@@ -16,17 +21,28 @@
     margin-bottom: 70px;
     padding-right: 80px;
     font-weight: 300;
+    @media (max-width: 748px) {
+        margin-bottom: 30px;
+        }
+    }
     }
     a {
    @extend %button;
+   @media (max-width: 748px) {
+    margin-bottom: 50px;
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    }
+}
     &:hover {
         @extend %button_hover;
     }
     }
-}
+
 .banner_product_img {
     img {
         @extend %base_img;
     }
-}
 }
