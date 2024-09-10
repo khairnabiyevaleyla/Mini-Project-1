@@ -1,0 +1,32 @@
+#banner {
+    font-family: $default_font;
+    background-color: $bg_color;
+    padding-bottom: 50px;
+.banner_text {
+    h1 {
+    font-size: 66px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 35px;
+    line-height: 72px;
+    }
+    p {
+    font-size: 15px;
+    line-height: 1.8rem;
+    margin-bottom: 70px;
+    padding-right: 80px;
+    font-weight: 300;
+    }
+    a {
+   @extend %button;
+    &:hover {
+        @extend %button_hover;
+    }
+    }
+}
+.banner_product_img {
+    img {
+        @extend %base_img;
+    }
+}
+}

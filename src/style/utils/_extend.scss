@@ -16,7 +16,30 @@
     transition: all 0.5s;
     transform-origin: top center;
      transform: scale(1, 0);
+     z-index: 999;
 }
 %dropdown_hover {
     transform: scale(1);
+}
+
+%button {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: $dropdown_color;
+    font-size: 15px;
+    font-weight: 500;
+    color: $white_color;
+    transition: all .4s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-size: 200% auto;
+    background-image: linear-gradient(16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%);
+}
+
+%button_hover {
+    background-position: right center;
 }
