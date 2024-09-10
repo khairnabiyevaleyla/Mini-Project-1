@@ -1,0 +1,70 @@
+#header {
+    font-family: $default_font;
+    text-transform: capitalize;
+    background-color: $bg_color;
+    padding: 20px;
+    .logo_img {
+        padding: 10px;
+    }
+.navbar{
+    @include Flexible (center,center,row,nowrap,10px);
+ul {
+        @include Flexible (center,center,row,nowrap,30px);
+li {
+a {
+    text-decoration: none;
+    color: $black_color;
+    font-size: 15px;
+    font-weight: 400;
+    i {
+        font-size: 18px;
+    }
+    }
+    }
+    .nav_menu {
+        position: relative;
+        @include Flexible (center,center,column,nowrap,10px);
+        .dropdown_menu {
+          @extend %dropdown_menu;
+             @include Flexible (center,start,column,nowrap,10px);
+          li {
+            a {
+                color: $white_color;
+               
+                 }
+          }
+        }
+        &:hover .dropdown_menu  {
+            @extend %dropdown_hover;
+        }
+    }
+    }
+    }
+    .nav_actions {
+        @include Flexible (flex-end,center,row,nowrap,20px);
+        padding: 10px;
+        a {
+        text-decoration: none;
+        color: $black_color;
+        i {
+            font-size: 18px;
+        }
+        }
+        .shop {
+            position: relative;
+            span {
+                position: absolute;
+                border-radius: 50%;
+                background-color: $bg_red;
+                width: 14px;
+                height: 14px;
+                right: -7px;
+                top: -5px;
+                text-align: center;
+                line-height: 15px;
+                font-size: 9px;
+                color: #fff;
+            }
+        }
+    }
+}
