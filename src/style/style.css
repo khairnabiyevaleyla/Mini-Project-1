@@ -79,7 +79,7 @@ table {
   transform: scale(1);
 }
 
-#banner .banner_text a {
+#banner_sale .banner_book .book_btn a, #banner .banner_text a {
   display: inline-block;
   width: 180px;
   height: 60px;
@@ -97,7 +97,7 @@ table {
   background-image: linear-gradient(16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%);
 }
 
-#banner .banner_text a:hover {
+#banner_sale .banner_book .book_btn a:hover, #banner .banner_text a:hover {
   background-position: right center;
 }
 
@@ -434,4 +434,104 @@ table {
 }
 #products .product_card:hover i {
   padding-left: 30px;
+}
+
+#banner_sale {
+  font-family: "Poppins", sans-serif;
+  background-color: #ecfdff;
+  padding: 20px 0;
+}
+@media (max-width: 748px) {
+  #banner_sale .banner_img img {
+    width: 200px;
+    height: 220px;
+  }
+}
+#banner_sale .banner_text {
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+@media (max-width: 748px) {
+  #banner_sale .banner_text {
+    font-size: 30px;
+    line-height: 28px;
+    margin-top: 40px;
+  }
+}
+#banner_sale .banner_countdown .timer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;
+  line-height: 38px;
+}
+@media (max-width: 748px) {
+  #banner_sale .banner_countdown .timer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+#banner_sale .banner_countdown .timer .date {
+  font-size: 36px;
+  color: #000;
+  font-weight: 700;
+  border-right: 1px solid #edeff2;
+  padding-right: 9%;
+}
+@media (max-width: 748px) {
+  #banner_sale .banner_countdown .timer .date {
+    font-size: 24px;
+  }
+}
+#banner_sale .banner_countdown .timer .date span {
+  font-size: 13px;
+  color: #666666;
+  text-transform: uppercase;
+}
+#banner_sale .banner_book {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+  margin-top: 40px;
+}
+@media (max-width: 748px) {
+  #banner_sale .banner_book {
+    margin-top: 20px;
+  }
+}
+#banner_sale .banner_book input {
+  border: none;
+  height: 60px;
+  width: 380px;
+  padding-left: 25px;
+}
+@media (max-width: 748px) {
+  #banner_sale .banner_book input {
+    height: 50px;
+    width: 240px;
+    font-size: 12px;
+    padding-left: 15px;
+  }
+}
+#banner_sale .banner_book .book_btn a {
+  border-radius: 0 5px 5px 0;
+}
+@media (max-width: 748px) {
+  #banner_sale .banner_book .book_btn a {
+    height: 50px;
+    width: 100px;
+    line-height: 48px;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */

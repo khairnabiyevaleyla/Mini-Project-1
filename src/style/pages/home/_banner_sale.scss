@@ -1,0 +1,83 @@
+#banner_sale {
+    font-family: $default_font;
+    background-color: $bg_color;
+    padding: 20px 0;
+.banner_img {
+   img {
+    @media (max-width: 748px){
+        width: 200px;
+        height: 220px;
+    }
+   }
+    }
+.banner_text {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    @media (max-width: 748px) {
+    font-size: 30px;  
+    line-height: 28px;
+    margin-top: 40px;
+    }
+}
+.banner_countdown {
+ .timer {
+    @include Flexible (flex-start,center,row,nowrap,30px);
+    line-height: 38px;
+    @media (max-width: 748px) {
+    @include Flexible (flex-start,start,row,wrap,10px);
+    }
+.date {
+    font-size: 36px;
+     color: #000;
+     font-weight: 700;
+     border-right: 1px solid #edeff2;
+     padding-right: 9%;
+     @media (max-width: 748px) {
+    font-size: 24px;
+  
+     }
+span {
+    font-size: 13px;
+    color: #666666;
+    text-transform: uppercase;
+            }
+        }
+    }
+}
+.banner_book {
+    @include Flexible (flex-start,center,row,nowrap,0);
+   margin-top: 40px;
+   @media (max-width: 748px){
+    margin-top: 20px;
+    }
+    input {
+        border: none;
+        height: 60px;
+        width: 380px;
+        padding-left: 25px;
+        @media (max-width: 748px) {
+            height: 50px;
+            width: 240px;
+            font-size: 12px;
+            padding-left: 15px;
+        }
+    }
+    .book_btn {
+        a {
+         @extend %button;  
+         border-radius: 0 5px 5px 0; 
+         @media (max-width: 748px)  {
+            height: 50px;
+            width: 100px;
+            line-height: 48px;
+            font-size: 12px;
+        }
+         &:hover {
+        @extend %button_hover; 
+         }
+        }
+    }
+}
+}
