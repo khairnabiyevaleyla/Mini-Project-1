@@ -1,0 +1,116 @@
+#featured_category {
+    font-family: $default_font;
+.featured_title {
+   margin-bottom: 20px;
+h2 {
+    font-size: 36px;
+    color: $title_color;
+    line-height: 27px;
+    font-weight: 700;
+    }
+    }
+.product_card_wide {
+    height: 400px;
+     background-color: $card_color;
+    @include Flexible (space-between,center,row,nowrap,10px);
+    @media (max-width: 748px) {
+        @include Flexible (space-around,center,row,nowrap,10px);
+    }
+
+&__text {
+    position: relative;
+    text-align: start;  
+    padding: 20px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+   
+p {
+    font-size: 15px;
+    color: #000;
+    font-weight: 300;
+   
+}
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 28px;
+ 
+}
+a {
+    position: absolute;
+    top: 250px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: $dropdown_color;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    @media (max-width: 748px) {
+        font-size: 11px;
+    }
+}
+   }
+&__img {
+    overflow: hidden;
+     img {
+     @extend %base_img;
+     }
+ }
+ &:hover a {
+    opacity: 1;
+    visibility: visible;
+   } 
+}
+.product_card_small {
+    height: 400px;
+     background-color: $card_color;
+    @include Flexible (space-between,center,row,nowrap,10px);
+&__text {
+    position: relative;
+    text-align: start;  
+    padding: 20px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+p {
+    font-size: 15px;
+    color: #000;
+    font-weight: 300;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 28px;
+    @media (max-width: 748px) {
+    width: 100px;
+    }
+}
+a {
+    position: absolute;
+    top: 250px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: $dropdown_color;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    @media (max-width: 748px) {
+        font-size: 11px;
+    }
+}
+   }
+&__img {
+    overflow: hidden;
+     img {
+     @extend %base_img;
+     }
+ }
+ &:hover a {
+    opacity: 1;
+    visibility: visible;
+   } 
+}
+}

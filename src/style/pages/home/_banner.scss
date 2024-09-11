@@ -1,7 +1,6 @@
 #banner {
     font-family: $default_font;
     background-color: $bg_color;
-    padding-bottom: 50px;
 .banner_text {
     h1 {
     font-size: 66px;
@@ -25,24 +24,27 @@
         margin-bottom: 30px;
         }
     }
-    }
     a {
-   @extend %button;
-   @media (max-width: 748px) {
-    margin-bottom: 50px;
-    width: 100px;
-    height: 40px;
-    font-size: 12px;
-    line-height: 40px;
+        @extend %button;
+        &:hover {
+            @extend %button_hover;
+        }
+        @media (max-width: 748px) {
+            margin-bottom: 50px;
+            width: 100px;
+            height: 40px;
+            font-size: 12px;
+            line-height: 34px;
+            }
+     }
     }
-}
-    &:hover {
-        @extend %button_hover;
-    }
-    }
-
 .banner_product_img {
-    img {
-        @extend %base_img;
-    }
+        img {
+            @extend %base_img;
+        }
+ }
 }
+
+
+
+
