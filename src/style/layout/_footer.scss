@@ -1,0 +1,105 @@
+#footer {
+    font-family: $default_font;
+    background-color: #FFFFFF;
+.title {
+    h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    }
+    ul {
+        li {
+            a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #7f7f7f;
+            margin-bottom: 10px;
+            line-height: 30px;
+            transition: 0.5s;
+            &:hover {
+                color: #ff3368;
+            }
+            }
+        }
+    }
+    p {
+    line-height: 2;
+    font-size: 15px;
+    color: #000;
+    font-weight: 300;
+    }
+    }
+.subs_btn {
+        position: relative;
+        top: 35px;
+ input {
+        border: none;
+        outline: none;
+        background-color: #f9f9fe;
+        padding: 20px 15px;
+        width: 80%;
+        border-radius: 5px;
+        font-size: 13px;
+        }
+        a {
+        right: 0;
+        bottom: 8px;
+        font-size: 14px;
+        text-decoration: none;
+        position: absolute;
+        background-color: #ff3368;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+        border: 2px solid #ff3368;
+        padding: 12px 25px;
+        }
+    }
+.copyright_text {
+p {
+    color: #888;
+    line-height: 2;
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-weight: 300;
+    @media (max-width: 748px) {
+   text-align: center;
+    }
+i {
+    font-size: 19px;
+}
+span {
+    color: #ff3368;
+}
+} 
+}
+.social_icons {
+    @include Flexible (flex-end,end,row,nowrap,20px);
+    @media (max-width: 748px) {
+        margin-top: 20px;
+        @include Flexible (center,center,row,nowrap,20px);
+         }
+ul {
+    @include Flexible (flex-end,end,row,nowrap,10px);
+    @media (max-width: 748px) {
+        @include Flexible (center,center,row,nowrap,20px);
+         }
+    li {
+        color: #7f7f7f;
+        font-size: 16px;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+      i {
+        font-size: 16px;
+        width: 40px;
+        height: 30px;
+        padding: 10px;
+        &:hover {
+            background-color: #ff3368;
+            color: $white_color;
+            }
+      }
+    }
+    }
+}
+}

@@ -654,6 +654,9 @@ table {
   border-radius: 5px;
   width: 210px;
 }
+#brands {
+  background-color: #FFFFFF;
+}
 #brands .brand_logo {
   height: 125px;
   display: flex;
@@ -676,4 +679,128 @@ table {
   #brands .brand_logo {
     width: 50%;
   }
+}
+
+#footer {
+  font-family: "Poppins", sans-serif;
+  background-color: #FFFFFF;
+}
+#footer .title h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+#footer .title ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #7f7f7f;
+  margin-bottom: 10px;
+  line-height: 30px;
+  transition: 0.5s;
+}
+#footer .title ul li a:hover {
+  color: #ff3368;
+}
+#footer .title p {
+  line-height: 2;
+  font-size: 15px;
+  color: #000;
+  font-weight: 300;
+}
+#footer .subs_btn {
+  position: relative;
+  top: 35px;
+}
+#footer .subs_btn input {
+  border: none;
+  outline: none;
+  background-color: #f9f9fe;
+  padding: 20px 15px;
+  width: 80%;
+  border-radius: 5px;
+  font-size: 13px;
+}
+#footer .subs_btn a {
+  right: 0;
+  bottom: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  position: absolute;
+  background-color: #ff3368;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #ff3368;
+  padding: 12px 25px;
+}
+#footer .copyright_text p {
+  color: #888;
+  line-height: 2;
+  font-size: 15px;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+@media (max-width: 748px) {
+  #footer .copyright_text p {
+    text-align: center;
+  }
+}
+#footer .copyright_text p i {
+  font-size: 19px;
+}
+#footer .copyright_text p span {
+  color: #ff3368;
+}
+#footer .social_icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+@media (max-width: 748px) {
+  #footer .social_icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+#footer .social_icons ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+@media (max-width: 748px) {
+  #footer .social_icons ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+#footer .social_icons ul li {
+  color: #7f7f7f;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+#footer .social_icons ul li i {
+  font-size: 16px;
+  width: 40px;
+  height: 30px;
+  padding: 10px;
+}
+#footer .social_icons ul li i:hover {
+  background-color: #ff3368;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
