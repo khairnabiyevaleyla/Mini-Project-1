@@ -79,7 +79,7 @@ table {
   transform: scale(1);
 }
 
-#banner_sale .banner_book .book_btn a, #banner .banner_text a {
+#subscription .text .subsribe_btn .subs_btn a, #banner_sale .banner_book .book_btn a, #banner .banner_text a {
   display: inline-block;
   width: 180px;
   height: 60px;
@@ -97,7 +97,7 @@ table {
   background-image: linear-gradient(16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%);
 }
 
-#banner_sale .banner_book .book_btn a:hover, #banner .banner_text a:hover {
+#subscription .text .subsribe_btn .subs_btn a:hover, #banner_sale .banner_book .book_btn a:hover, #banner .banner_text a:hover {
   background-position: right center;
 }
 
@@ -516,6 +516,7 @@ table {
   height: 60px;
   width: 380px;
   padding-left: 25px;
+  outline: none;
 }
 @media (max-width: 748px) {
   #banner_sale .banner_book input {
@@ -583,4 +584,73 @@ table {
 }
 #popular_products .product_card:hover .product_card__text {
   margin-top: 22px;
+}
+
+#subscription {
+  font-family: "Poppins", sans-serif;
+  background-image: url(https://preview.colorlib.com/theme/aranoz/img/subscribe_area.png.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 170px 0;
+}
+@media (max-width: 748px) {
+  #subscription {
+    padding: 120px 0;
+  }
+}
+#subscription .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+#subscription .text h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ff3368;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#subscription .text h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+@media (max-width: 748px) {
+  #subscription .text h2 {
+    font-size: 34px;
+    line-height: 52px;
+  }
+}
+#subscription .text .subsribe_btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 748px) {
+  #subscription .text .subsribe_btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+#subscription .text .subsribe_btn input {
+  border: none;
+  height: 60px;
+  width: 380px;
+  padding-left: 25px;
+  outline: none;
+}
+#subscription .text .subsribe_btn .subs_btn a {
+  border-radius: 5px;
+  width: 210px;
 }/*# sourceMappingURL=style.css.map */

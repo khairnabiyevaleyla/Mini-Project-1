@@ -1,0 +1,57 @@
+#subscription {
+    font-family: $default_font;
+    background-image: url(https://preview.colorlib.com/theme/aranoz/img/subscribe_area.png.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 170px 0;
+    @media (max-width: 748px) {
+      padding: 120px 0;
+    }
+ .text {
+    @include Flexible (center,center,column,nowrap,30px);
+    h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: $dropdown_color;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    }
+    h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    @media (max-width: 748px) {
+        font-size: 34px;
+        line-height: 52px;
+      }
+}
+.subsribe_btn {
+    @include Flexible (flex-start,center,row,wrap,10px);
+    @media (max-width: 748px) {
+        @include Flexible (flex-start,center,column,wrap,10px);    
+    }
+    input {
+        border: none;
+        height: 60px;
+        width: 380px;
+        padding-left: 25px;
+        outline: none;
+       
+    }
+    .subs_btn {
+        a {
+         @extend %button;  
+         border-radius: 5px; 
+         width: 210px;
+         &:hover {
+        @extend %button_hover; 
+        }
+         @media (max-width: 748px) {
+        
+        }
+        }
+    }
+}
+    }
+    }
