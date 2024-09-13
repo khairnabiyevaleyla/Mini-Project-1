@@ -803,4 +803,32 @@ table {
 #footer .social_icons ul li i:hover {
   background-color: #ff3368;
   color: #fff;
+}
+
+#page_banner {
+  font-family: "Poppins", sans-serif;
+  background-color: #ecfdff;
+}
+#page_banner .banner_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0;
+  text-transform: capitalize;
+  line-height: 38px;
+}
+#page_banner .banner_title h2 {
+  color: #222222;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#page_banner .banner_title p {
+  font-size: 15px;
+  color: #777777;
+}
+#page_banner .banner_img {
+  margin-left: 50px;
 }/*# sourceMappingURL=style.css.map */

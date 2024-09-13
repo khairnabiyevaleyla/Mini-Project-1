@@ -1,0 +1,22 @@
+#page_banner {
+    font-family: $default_font;
+    background-color: $bg_color;
+.banner_title {
+    @include Flexible (center,center,column,nowrap,0);
+    text-transform: capitalize;
+    line-height: 38px;
+  h2 {
+    color: #222222;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+ }
+   p {
+    font-size: 15px;
+    color: #777777;
+   }
+    }
+.banner_img {
+ margin-left: 50px;
+}
+}
