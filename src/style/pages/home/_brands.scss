@@ -1,0 +1,19 @@
+#brands {
+.brand_logo {
+    height: 125px;
+    @include Flexible (center,center,row,nowrap,0);
+    border-left: 1px solid #edeff2;
+    width: 20%;
+    float: left;
+    border-bottom: 1px solid #edeff2;
+    filter: grayscale(1);
+    transition: 0.5s;
+    &:hover {
+    filter: grayscale(0);
+    }
+    @media (max-width: 748px) {
+      width: 50%;
+      
+    }
+}
+}

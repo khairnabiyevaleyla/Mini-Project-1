@@ -653,4 +653,27 @@ table {
 #subscription .text .subsribe_btn .subs_btn a {
   border-radius: 5px;
   width: 210px;
+}
+#brands .brand_logo {
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+  border-left: 1px solid #edeff2;
+  width: 20%;
+  float: left;
+  border-bottom: 1px solid #edeff2;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+#brands .brand_logo:hover {
+  filter: grayscale(0);
+}
+@media (max-width: 748px) {
+  #brands .brand_logo {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
