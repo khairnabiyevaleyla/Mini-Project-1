@@ -53,7 +53,7 @@ table {
   border-spacing: 0;
 }
 
-#products .product_card img, #featured_category .product_card_small__img img, #featured_category .product_card_wide__img img, #banner .banner_product_img img {
+#popular_products .product_card img, #products .product_card img, #featured_category .product_card_small__img img, #featured_category .product_card_wide__img img, #banner .banner_product_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -372,6 +372,7 @@ table {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 60px;
+  padding-bottom: 30px;
 }
 #products .title h2 {
   font-size: 36px;
@@ -534,4 +535,52 @@ table {
     line-height: 48px;
     font-size: 12px;
   }
+}
+#popular_products {
+  font-family: "Poppins", sans-serif;
+}
+#popular_products .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 60px;
+  padding-bottom: 30px;
+}
+#popular_products .title h2 {
+  font-size: 36px;
+  color: #1a1a1a;
+  line-height: 27px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#popular_products .title span {
+  color: #adadad;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#popular_products .product_card {
+  border-radius: 5px;
+  transition: 0.5s;
+  background-color: #fff;
+}
+#popular_products .product_card__text {
+  line-height: 44px;
+  transition: 0.5s;
+  margin-top: 25px;
+}
+#popular_products .product_card__text h4 {
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.5s;
+}
+#popular_products .product_card__text h3 {
+  font-weight: 300;
+  font-size: 18px;
+  transition: 0.5s;
+}
+#popular_products .product_card:hover .product_card__text {
+  margin-top: 22px;
 }/*# sourceMappingURL=style.css.map */

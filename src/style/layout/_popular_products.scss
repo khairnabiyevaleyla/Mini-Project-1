@@ -1,0 +1,46 @@
+#popular_products {
+    font-family: $default_font;
+    .title {
+        @include Flexible (flex-start,end,row,nowrap,60px);
+        padding-bottom: 30px;
+        h2 {
+        font-size: 36px;
+        color: $title_color;
+        line-height: 27px;
+        font-weight: 700;
+        text-transform: capitalize;
+        }
+        span {
+        color: $grey;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+        }
+    }
+    .product_card {
+        border-radius: 5px;
+        transition: 0.5s;
+        background-color: $white_color;
+        img {
+            @extend %base_img;
+        }
+     &__text {
+        line-height: 44px;
+        transition: 0.5s;
+        margin-top: 25px;
+     h4 {
+        font-weight: 700;
+        font-size: 18px;
+        transition: 0.5s;
+        }
+     h3 {
+        font-weight: 300;
+        font-size: 18px;
+        transition: 0.5s;
+    }
+    }
+    &:hover .product_card__text {
+       margin-top: 22px;
+    }
+    }
+}

@@ -2,6 +2,7 @@
     font-family: $default_font;
 .title {
         @include Flexible (flex-start,end,row,nowrap,60px);
+        padding-bottom: 30px;
         h2 {
         font-size: 36px;
         color: $title_color;
