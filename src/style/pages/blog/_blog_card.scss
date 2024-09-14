@@ -1,0 +1,341 @@
+#blog_card {
+    overflow: hidden;
+    font-family: $default_font;
+.blog_post {
+    &__img {
+        position: relative;
+        img {
+            @extend %base_img;
+        }
+    &__date {
+        line-height: 1.6rem;
+        position: absolute;
+        bottom: -15px;
+        left: 45px;
+        color: #fff;
+        background-color: #ff3368;
+        padding: 20px 30px;
+        border-radius: 5px;
+        @media (max-width: 748px) {
+            padding: 10px 15px;
+            line-height: 0.6rem;
+            left: 20px;
+        }
+        h3 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        @media (max-width: 748px) {
+            font-size: 18px;
+        }
+        }
+        p {
+            font-size: 18px;
+            text-transform: capitalize;
+         @media (max-width: 748px) {
+            font-size: 12px;
+        }
+        }
+    }
+    }
+    &__text {
+        box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+        padding: 35px;
+    h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            margin-top: 20px;
+            transition: 0.4s ease-in;
+            cursor: pointer;
+        @media (max-width: 748px) {
+            font-size: 15px;
+            margin-top: 0;
+        }
+        &:hover {
+            color: #ff3368;
+        }
+        }
+    p {
+        font-size: 15px;
+        color: #000;
+        font-weight: 300;
+        line-height: 24px;
+    @media (max-width: 748px) {
+        font-size: 12px;
+        line-height: 16px;
+        }
+        }
+    ul {
+        margin-top: 25px;
+        @include Flexible (flex-start,center,row,nowrap,20px);
+        color: #666666;
+        font-size: 14px;
+    @media (max-width: 748px) {
+        font-size: 8px;
+        }
+    li:first-child {
+    position: relative;
+    &::after  {
+    content: '';
+    position: absolute;
+    left: 130px;
+    top: 0;
+    width: 1.5px;
+    height: 100%;
+    background: #000;
+    @media (max-width: 748px) {
+    left: 80px;
+    width: 1.2px;
+    }
+    }
+    }
+    li {
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            color: #ff3368;
+        }
+        }
+    }
+        }
+}
+.pages {
+    @include Flexible (center,center,row,nowrap,20px);
+ul {
+    @include Flexible (center,center,row,nowrap,10px);
+li {
+text-align: center;
+font-size: 14px;
+border: 1px solid #f0e9ff;
+width: 45px;
+height: 45px;
+padding-top: 16px;
+transition: 0.3s ease-in-out;
+cursor: pointer;
+&:hover  {
+    background-color: #EAECEF;
+    }
+i {
+&:hover {
+    color: #ff3368;
+}
+}
+}
+li:nth-child(3) {
+background-color: #fbf9ff; 
+
+}
+
+}
+}
+.side_menu {
+&__search {
+    @include Flexible (center,center,column,nowrap,20px);
+    background: #fbf9ff;
+    padding: 30px;
+@media (max-width: 748px) {
+
+}
+&__bar {
+    @include Flexible (flex-start,start,row,nowrap,0);
+input {
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 260px;
+    font-size: 13px;
+    color: #999999;
+    border-radius: 0 5px 5px 0;
+    border-color: 1px solid #fbf9ff;
+    padding-left: 20px;
+@media (max-width: 748px) {
+    width: 150px;
+}
+
+}
+i {
+    background-color: #fff;
+    height: 50px;
+    width: 40px;
+    color: #999999;
+    padding: 15px;
+@media (max-width: 748px) {
+  width: 10px;  
+  padding-right: 25px;
+  
+}
+}
+}
+&__btn {
+a {
+text-decoration: none;
+border: 1px solid #edeff2;
+text-transform: uppercase;
+background-color: #ff3368;
+font-size: 15px;
+font-weight: 500;
+display: inline-block;
+color: #fff;
+height: 50px;
+width: 300px;
+text-align: center;
+line-height: 44px;
+@media (max-width: 748px) {
+    width: 185px;
+}
+}
+}
+}
+&_category {
+padding: 30px;
+margin-top: 30px;
+background: #fbf9ff;
+text-transform: capitalize;
+h4 {
+font-size: 20px;
+margin-bottom: 30px;
+font-weight: 500;
+border-bottom: 1px solid #f0e9ff;
+padding-bottom: 12px;
+}
+ul {
+line-height: 44px;
+li {
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+    border-bottom: 1px solid #f0e9ff;
+    transition: all 0.3s ease 0s;
+    padding-bottom: 10px;
+    cursor: pointer;
+&:hover {
+    color: #ff3368;
+}
+}
+}
+}
+&__posts {
+background: #fbf9ff;
+text-transform: capitalize;
+margin-top: 30px;
+padding: 20px;
+h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    border-bottom: 1px solid #f0e9ff;
+    margin-left: 20px; 
+    padding-top: 20px;
+    padding-bottom: 12px;
+
+}
+&__img {
+    img {
+        @extend %base_img;
+    }
+}
+&__card {
+    @include Flexible (space-between,center,row,nowrap,20px);
+    padding: 22px;
+&__title {
+a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 6px;
+    transition: all 0.3s linear;
+    color: #000;
+    font-weight: 500;
+    &:hover {
+        color: #ff3368;
+    }
+}
+p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    line-height: 28px;
+}
+} 
+}
+}
+&__tags {
+background: #fbf9ff;
+margin-top: 30px;
+padding: 30px;
+h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    border-bottom: 1px solid #f0e9ff;
+    margin-left: 20px; 
+    padding-top: 20px;
+    padding-bottom: 12px;  
+}
+&__search {
+ul {
+@include Flexible (flex-start,center,row,wrap,5px);
+li {
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    background: #fff;
+    padding: 6px 20px;
+    transition: all 0.3s ease 0s;
+    color: #888888;
+    font-size: 13px;
+    cursor: pointer;
+    &:hover {
+    background: #ff3368;
+    color: #fff
+    }
+}
+}
+}
+}
+&__insta {
+    background: #fbf9ff;
+    margin-top: 30px;
+    padding: 30px;
+h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    border-bottom: 1px solid #f0e9ff;
+    margin-left: 20px; 
+    padding-top: 20px;
+    padding-bottom: 12px;  
+}
+&__feeds {
+   ul {
+    cursor: pointer;
+    @include Flexible (center,center,row,wrap,10px);
+   }
+}
+}
+&__subscription {
+    background: #fbf9ff;
+    margin-top: 30px;
+    padding: 30px;  
+    h4 {
+        text-transform: capitalize;
+        font-size: 20px;
+        margin-bottom: 30px;
+        font-weight: 500;
+        border-bottom: 1px solid #f0e9ff;
+        margin-left: 20px; 
+        padding-top: 20px;
+        padding-bottom: 12px;   
+    }
+&__email {
+    @extend .side_menu__search__bar;
+    margin-bottom: 20px;
+input {
+width: 300px;
+}
+}
+}
+}
+}
