@@ -1,0 +1,223 @@
+#products_menu {
+    font-family: $default_font;
+.side_bar {
+        @include Flexible (flex-start,start,column,nowrap,10px);
+    .title {
+        font-size: 18px;
+        color: #2a2a2a;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 15px;
+        }
+    .side_bar_content_category {
+        @include Flexible (flex-start,start,column,nowrap,20px);
+    ul {
+        line-height: 34px;
+    li {
+        @include Flexible (space-between,start,row,nowrap,30px);
+        transition: 0.5s ease-in;
+        &:hover a  {
+        color: #ff3368;
+        }
+        &:hover span {
+            color: #ff3368;
+            }
+    a {
+        font-size: 14px;
+        font-weight: normal;
+        color: #797979;
+        text-decoration: none;
+       }
+    span { 
+        font-size: 14px;  
+        color: #212529;
+        }
+      
+    }
+    }
+    }
+    .side_bar_content_filter {
+    @extend .side_bar_content_category;
+    ul:first-child {
+    border-top: 0px solid transparent;
+    margin-top: 0;
+    padding-top: 0;
+    }
+    ul {
+    border-top: 1px solid #ddd;
+    width: 200px;
+    margin-top: 10px;
+    padding-top: 25px;
+    }
+    }
+    .side_bar_content_color {
+        @extend .side_bar_content_category;
+    }
+    .side_bar_content_price {
+        width: 200px;
+        input[type=range]{
+            -webkit-appearance: none;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            height: 5px;
+            border-radius: 5px;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            background: #ff3368;
+            margin-top: -4px;
+        }
+    }
+    }
+.product_bar {
+    @media (max-width: 748px){
+    @include Flexible (center,center,column,nowrap,10px);
+    }
+&__count {
+    @media (max-width: 748px){
+       margin: 0;
+    padding: 0; }
+span {
+    color:#ff3368;
+        }
+ p {
+    color: #020202;
+    font-weight: 500;
+    font-size: 15px;
+    @media (max-width: 748px){
+    font-size: 10px;
+    }
+    }
+}
+&__sort {
+    display: flex;
+    gap: 10px;
+    h5 {
+    font-size: 13px;
+    font-weight: 500;
+    @media (max-width: 748px){
+    font-size: 10px;
+    }
+    }
+    p {
+    font-size: 13px;
+    font-weight: 300;
+    @media (max-width: 748px){
+    font-size: 10px;
+    }
+    }
+}
+&__show {
+    display: flex;
+    gap: 30px;
+    @media (max-width: 748px){
+        gap: 10px;
+    }
+    h5 {
+    font-size: 13px;
+    font-weight: 500;
+    @media (max-width: 748px){
+    font-size: 10px;
+    }
+    }
+    ul {
+        display: flex;
+        gap: 10px;
+        font-size: 14px;
+    @media (max-width: 748px){
+        font-size: 10px;
+    }
+    }
+}
+&__search {
+border-bottom: 1px solid #ddd;
+@include Flexible (center,center,row,nowrap,10px);
+input {
+text-align: center;
+outline: none;
+border: none;
+width: 120px;
+@media (max-width: 748px) {
+width: 80px;
+font-size: 11px;
+}
+}
+i {
+ color: #656B71;
+ font-size: 17px;
+ @media (max-width: 748px) {
+font-size: 11px;
+}
+}
+}
+}
+.product_card {
+    border-radius: 5px;
+    transition: 0.3s linear;
+    background-color: $white_color;
+    img {
+        @extend %base_img;
+    }
+ &__text {
+    line-height: 44px;
+    transition: 0.3s linear;
+ h4 {
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.3s linear;
+    }
+ h3 {
+    font-weight: 300;
+    font-size: 18px;
+    transition: 0.3s linear;
+}
+a {
+    color: $dropdown_color;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+    
+    i {
+    padding-left: 90px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+    transition: 0.3s linear;
+    }
+}
+}
+&:hover {
+    box-shadow: 0px 10px 20px 0px rgba(0, 23, 51, 0.09);
+}
+&:hover a {
+opacity: 1;
+visibility: visible;
+}
+&:hover .product_card__text {
+padding-left: 35px;
+}
+&:hover i {
+    padding-left: 30px;
+}
+}
+.pages {
+@include Flexible (center,center,row,nowrap,20px);
+ul{
+@include Flexible (center,center,row,nowrap,20px);
+font-weight: 500;
+font-size: 18px;
+color: #979797;
+li {
+cursor: pointer;
+transition: 0.6s ease-in-out;
+&:hover {
+background-color: transparent;
+color: #000;
+}
+}
+}
+}
+}
