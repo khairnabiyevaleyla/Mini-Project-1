@@ -1,0 +1,102 @@
+#location {
+.google-map {
+@include Flexible (center,center,row,nowrap,0);
+iframe {
+width: 1100px;
+}
+}
+}
+
+#contact {
+    font-family: $default_font;
+.title{
+h2 {
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    }
+}
+.message_box {
+.message { 
+    height: 100%;
+    border: 1px solid #f0e9ff;
+    border-radius: 5px;
+    font-size: 13px;
+    background: transparent;
+    color: #8A8A8A;
+    outline:0px none transparent;
+&:focus {
+    outline: 0 !important;
+}
+}
+}
+.form_groups {
+input {
+  border: none;  
+  outline: none; 
+  border: 1px solid #f0e9ff;
+  font-size: 13px;
+  background: transparent;
+  color: #8A8A8A;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 15px;
+   }
+   }
+.form_group {
+    input {
+        border: none;  
+        outline: none; 
+        border: 1px solid #f0e9ff;
+        font-size: 13px;
+        background: transparent;
+        color: #8A8A8A;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        padding-left: 15px;
+       }
+    }
+.submit_btn {
+a {
+text-decoration: none;
+background-color: #ff3368;
+color: $white_color;
+text-transform: uppercase;
+border-radius: 50px;
+padding: 13px 25px;
+font-size: 15px;
+font-weight: 400;
+transition: all .4s ease-in-out;
+box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
+&:hover {
+background-color: red;
+}
+}
+}
+.contact_details {
+    @include Flexible (flex-start,center,row,nowrap,20px);
+    margin-bottom: 20px;
+&__icon {
+    i {
+        color: #8f9195;
+        font-size: 36px;
+    }
+}
+&__text {
+    line-height: 1.5;
+    h3 {
+    font-size: 16px;
+    color: #2a2a2a;
+    font-weight: 500;
+    }
+    p {
+    color: #8a8a8a;
+    font-size: 15px;
+    font-weight: 300;
+    }
+}
+}
+}
