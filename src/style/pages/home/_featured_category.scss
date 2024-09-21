@@ -1,12 +1,17 @@
 #featured_category {
     font-family: $default_font;
+    margin-top: 50px;
 .featured_title {
    margin-bottom: 20px;
+   margin-top: 50px;
 h2 {
     font-size: 36px;
     color: $title_color;
     line-height: 27px;
     font-weight: 700;
+    @media (max-width: 748px) {
+        font-size: 26px;   
+    }
     }
     }
 .product_card_wide {

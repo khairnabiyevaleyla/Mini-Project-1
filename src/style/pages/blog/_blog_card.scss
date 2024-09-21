@@ -2,6 +2,7 @@
     overflow: hidden;
     font-family: $default_font;
 .blog_post {
+    margin-top: 100px;
     &__img {
         position: relative;
         img {
@@ -130,40 +131,30 @@ background-color: #fbf9ff;
 }
 }
 .side_menu {
+    margin-top: 100px;
 &__search {
     @include Flexible (center,center,column,nowrap,20px);
     background: #fbf9ff;
     padding: 30px;
-@media (max-width: 748px) {
 
-}
 &__bar {
     @include Flexible (flex-start,start,row,nowrap,0);
 input {
     outline: none;
     border: none;
-    height: 50px;
-    width: 260px;
     font-size: 13px;
     color: #999999;
     border-radius: 0 5px 5px 0;
     border-color: 1px solid #fbf9ff;
-    padding-left: 20px;
-@media (max-width: 748px) {
-    width: 150px;
-}
-
+    padding: 20px 65px;
 }
 i {
     background-color: #fff;
-    height: 50px;
-    width: 40px;
     color: #999999;
-    padding: 15px;
+    padding: 22px;
 @media (max-width: 748px) {
   width: 10px;  
   padding-right: 25px;
-  
 }
 }
 }
@@ -181,9 +172,6 @@ height: 50px;
 width: 300px;
 text-align: center;
 line-height: 44px;
-@media (max-width: 748px) {
-    width: 185px;
-}
 }
 }
 }
@@ -228,7 +216,6 @@ h4 {
     margin-left: 20px; 
     padding-top: 20px;
     padding-bottom: 12px;
-
 }
 &__img {
     img {
@@ -238,6 +225,10 @@ h4 {
 &__card {
     @include Flexible (space-between,center,row,nowrap,20px);
     padding: 22px;
+    @media (min-width: 748px) {
+        @include Flexible (flex-start,center,row,nowrap,20px);
+        
+    }
 &__title {
 a {
     text-decoration: none;

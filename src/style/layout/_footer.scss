@@ -1,11 +1,21 @@
 #footer {
     font-family: $default_font;
     background-color: #FFFFFF;
+    margin-top: 50px;
+
 .title {
     h4 {
     font-size: 20px;
     margin-bottom: 25px;
     font-weight: 500;
+    @media only screen and (max-width: 748px) {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    @media only screen and (min-width: 748px) {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
     }
     ul {
         li {
@@ -32,14 +42,18 @@
 .subs_btn {
         position: relative;
         top: 35px;
+       
  input {
         border: none;
         outline: none;
         background-color: #f9f9fe;
         padding: 20px 15px;
-        width: 80%;
+        width: 330px;
         border-radius: 5px;
         font-size: 13px;
+        @media only screen and (min-width:321px) and (max-width:768px) {
+            width: 260px;
+          }
         }
         a {
         right: 0;
@@ -53,18 +67,25 @@
         border-radius: 5px;
         border: 2px solid #ff3368;
         padding: 12px 25px;
+        @media only screen and (min-width:321px) and (max-width:768px) {
+            right: 60px;
+        }
         }
     }
 .copyright_text {
+    margin-top: 60px;
 p {
     color: #888;
     line-height: 2;
     font-size: 15px;
     margin-bottom: 0px;
     font-weight: 300;
-    @media (max-width: 748px) {
+    @media only screen and (min-width:321px) and (max-width:768px) {
    text-align: center;
     }
+    @media only screen and (min-width:321px) and (max-width:768px) {
+        text-align: center;
+      }
 i {
     font-size: 19px;
 }
@@ -75,13 +96,17 @@ span {
 }
 .social_icons {
     @include Flexible (flex-end,end,row,nowrap,20px);
-    @media (max-width: 748px) {
+    margin-top: 60px;
+    @media only screen and (min-width:321px) and (max-width:768px) {
         margin-top: 20px;
         @include Flexible (center,center,row,nowrap,20px);
          }
+         @media only screen and (min-width:321px) and (max-width:768px) {
+           margin-top: 10px;
+          }
 ul {
     @include Flexible (flex-end,end,row,nowrap,10px);
-    @media (max-width: 748px) {
+    @media only screen and (min-width:321px) and (max-width:768px) {
         @include Flexible (center,center,row,nowrap,20px);
          }
     li {

@@ -1,5 +1,6 @@
 #products_menu {
     font-family: $default_font;
+    margin-top: 100px;
 .side_bar {
         @include Flexible (flex-start,start,column,nowrap,10px);
     .title {

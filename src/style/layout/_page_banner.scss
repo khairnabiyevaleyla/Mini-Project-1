@@ -1,15 +1,27 @@
 #page_banner {
     font-family: $default_font;
     background-color: $bg_color;
+    @media (max-width: 748px) {
+      padding-left: 30px;  
+    }
+    @media (min-width: 748px) {
+      padding-top: 30px;
+    }
 .banner_title {
     @include Flexible (center,center,column,nowrap,0);
     text-transform: capitalize;
     line-height: 38px;
+    margin-top: 50px;
+    @media (max-width: 748px) {
+      margin-bottom: 20px;
+      @include Flexible (flex-start,start,row,wrap,0);
+    }
   h2 {
     color: #222222;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 10px;
+   
  }
    p {
     font-size: 15px;
@@ -17,6 +29,6 @@
    }
     }
 .banner_img {
- margin-left: 50px;
+overflow: hidden;
 }
 }
